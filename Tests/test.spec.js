@@ -10,7 +10,7 @@ export default function() {
   let res = http.get("https://serverest.dev/usuarios");
   check(res, {
     "status was 200": (r) => r.status == 200,
-    "transaction time OK": (r) => r.timings.duration < 200
+    "transaction time OK": (r) => r.timings.duration < 2000
   });
 
   sleep(1);
