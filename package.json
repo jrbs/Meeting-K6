@@ -1,0 +1,22 @@
+{
+  "name": "meeting-k6",
+  "version": "1.0.0",
+  "description": "Esse projeto tem como objetivo a demonstração de teste de carga utilizando K6 como ferramenta.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/jrbs/Meeting-K6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrbs/Meeting-K6/issues"
+  },
+  "homepage": "https://github.com/jrbs/Meeting-K6#readme",
+  "dependencies": {
+    "k6": "^0.0.0"
+  }
+}
