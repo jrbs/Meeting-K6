@@ -9,13 +9,12 @@ export let options = {
   duration: '30s', // duração do teste
 };
 
-
 export let duration = {
     stages: [
-      { duration: "1m", target: 50 },
-      { duration: "1m", target: 100 },
-      { duration: "1m", target: 200 },
-      { duration: "1m", target: 300 }
+      { duration: "1s", target: 1 },
+      { duration: "1s", target: 2 },
+      { duration: "1s", target: 3 },
+      { duration: "1s", target: 4 }
     ]
   };
 
