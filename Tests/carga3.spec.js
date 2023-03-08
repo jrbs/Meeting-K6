@@ -12,12 +12,17 @@ export let options = {
   },
 };
 
+const random = () => {
+    let rEmail = `user${Math.floor(Math.random() * 100000)}@example.com`;
+    return rEmail;
+}
+
 export default function () {
   const url = 'https://serverest.dev/usuarios';
 
   const payload = JSON.stringify({
     nome: 'User Teste',
-    email: `test${__VU}@example.com`,
+    email: random(),
     password: '123456',
     administrador: 'false',
   });
@@ -25,14 +30,15 @@ export default function () {
   const params = {
     headers: {
       'Content-Type': 'application/json',
+      'Monitor' : 'false'
     },
   };
 
   const response = http.post(url, payload, params);
-
   check(response, {
-    'status is 201': (r) => r.status === 201,
+    'status is 201': (response) => response.status == 201, 
+    'verify body message text': (r) => r.body.includes('Cadastro realizado com sucesso'),
   });
 
-  sleep(1);
+  sleep(3);
 }

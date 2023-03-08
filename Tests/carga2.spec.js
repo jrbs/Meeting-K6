@@ -28,7 +28,6 @@ export default function () {
         "content type is application/json": (r) =>
           r.headers["Content-Type"] === "application/json; charset=utf-8",
       });
-      console.log("Duranção da REQ1 : " + carga.timings.duration);
       sleep(1);
     }
     

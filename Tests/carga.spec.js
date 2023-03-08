@@ -6,17 +6,8 @@ import { check, group, sleep } from 'k6';
 
 export let options = {
   vus: 50, // número de usuários virtuais simulados
-  duration: '30s', // duração do teste
+  duration: '15s', // duração do teste
 };
-
-export let duration = {
-    stages: [
-      { duration: "1s", target: 1 },
-      { duration: "1s", target: 2 },
-      { duration: "1s", target: 3 },
-      { duration: "1s", target: 4 }
-    ]
-  };
 
 export default function () {
  
