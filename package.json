@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jrbs/Meeting-K6#readme",
   "dependencies": {
-    "k6": "^0.0.0"
+    "k6": "^0.0.0",
+    "k6-html-reporter": "^1.0.5"
   }
 }
