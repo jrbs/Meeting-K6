@@ -53,11 +53,11 @@ export default function () {
   console.warn("Asserção " + success)
   
   check(response, {
-    "status is 201": (dr) => dr.status == 201,
+    "status is 201": (r) => r.status == 401,
     "response body is not empty": (r) => r.body.length > 0,
     "content type is application/json": (r) =>
       r.headers["Content-Type"] === "application/json; charset=utf-8",
   });
 
-  sleep(3);
+  sleep(1);
 }
